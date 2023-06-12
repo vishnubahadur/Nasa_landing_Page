@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+.main{
+    background: linear-gradient(to right, rgba(0,0,0,1) 20%,rgba(0,0,0,0)),url("https://solarsystem.nasa.gov/internal_resources/6053/planetshero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    background-position: center center;
+    position: relative;
+}
+
+.navbar{
+    /* background-color:turquoise; */
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
+    width: 100%;
+    position: fixed;
+    background-color: transparent ;
+    z-index: 99;
+    transition: all ease-in-out 0.5s;
+    
+}
+.right{
+    padding-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    color: #fff;
+}
+.navbar h4{
+    letter-spacing: 1px;
+    margin-top:15px;
+    font-size:17px;
+    line-height: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar h5{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:17px;
+    margin-top: 5px;
+    word-spacing: 6px;
+    letter-spacing:2px;
+    font-weight: 500;
+}
+.logo{
+    width: 76px;
+    height: 62px;
+}
+.left{
+    display: flex;
+}
+.menu{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    /* gap:20px; */
+}
+.menu li{
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin: 16px;
+    list-style: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+.hero{
+    background: transparent;
+    height: 60vh;
+    color: #ffffff;
+}
+.hero h1{
+    position:absolute;
+    top:40%;
+    left:5%;
+    font-size: 60px;
+}
+.hero h4{
+    position:absolute;
+    top:49%;
+    left: 5%;
+    font-size: 19px;
+    line-height: 2rem;
+}
+.main .bottom{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #0000006d;
+}
+.bottom ol{
+    display: flex;
+    justify-content: space-around;
+}
+.bottom .value{
+    margin: 20px 20px;
+    color:#A8D2ED;
+    align-items: center;
+}
+.value li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+} 
+
+.discription{
+    position: relative;
+    height: 600px;
+}
+.discription .top-bar{
+    position:absolute;
+    top: 0;
+    background-color: #D1DDE6;
+    height: 70px;
+    width: 100%;
+}
+.discription .sidebox{
+    position: relative;
+    top:150px;
+    left: 70px;
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+    color: #3c3f40;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sidebox h5{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(9, 140, 192);
+}
+.discription .content1{
+    position: absolute;
+    top: 60%;
+    width: 600px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    line-height: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url('https://solarsystem.nasa.gov/assets/tabs_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: teal; */
+}
+.info{
+    margin-top:80px;
+}
+.info h1{
+    color: #fff;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+.plist ol{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.plist ol li{
+    font-size: 15px;
+    color:lightslategray
+}
+.plist ol li:not(:last-child)::after{
+    content: "|";
+    margin-left: 30px;
+    color: rgb(71, 70, 70);
+}
+.plist ol li:hover{
+    color: white;
+    cursor: pointer;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    width:80%;
+    row-gap: 0px;
+    padding-bottom: 100px;
+}
+.card{
+    display: flex;
+    margin-top: 40px;
+    background-color:rgb(22,25,30,0.7);
+    width: 513px;
+    height: 235px;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+.card .image{
+    width: 231px;
+    height: 200px;
+    background-color: aqua;
+    opacity: 1;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.content{
+    padding: 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    width: 70%;
+    height: 100%;
+    color: white;
+}
+.content p{
+    padding-top: 5px;
+    line-height: 1.7rem;
+}
+#pipe{
+    margin-left: 30px;
+}
+/* .menu li:not(:last-child)::after {
+    content: "|";
+    height: 20px;
+    width: 200px;
+    margin-left: 30px;
+} */
+.card:hover{
+    background-color:rgba(48, 52, 60, 0.6);
+    
+    cursor: pointer;
+}
+#page1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 750px;
+
+
+}
+#page1 .content2{
+    margin-top: 50px;
+    width: 650px;
+    font: 20px;
+    color: #414242;
+    line-height: 30px
+}
+#page1 .content2 h1{
+    margin-bottom: 50px;
+    width: 650px;
+    font: 20px;
+    color: #2a2727;
+    line-height: 40px
+}
+#page2{
+    width: 100%;
+    height: 750px;
+    background-color: #C7CDD4;
+}
+#footer{
+    width: 100%;
+    height: 1470px;
+    background: url("https://solarsystem.nasa.gov/assets/footer_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
